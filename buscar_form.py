@@ -69,7 +69,7 @@ def buscar_palabras_en_archivos():
             print(f"Error al procesar el archivo {archivo}: {e}")
 
     if resultados:
-        files_text.insert(tk.END, f"\nArhivos encontrados: {len(resultados)}\n")
+        files_text.insert(tk.END, f"\nArchivos encontrados: {len(resultados)}\n")
         files_text.insert(tk.END, "\n".join(resultados))
     else:
         files_text.insert(tk.END, "No se han encontrado resultados")
